@@ -1,15 +1,14 @@
 application:
-  name: BitBot
-  project: BitBot
-  cloud_region: aws/us-east-2
-  publicly_accessible: true
+  name: "bitbot"
+  project: "BitByte"
+  organization: "QoveryCommunity"
 databases:
-- type: postgresql
-  version: "11.5"
-  name: the-db
+- type: "REDIS"
+  name: "the-data"
+  version: "6"
 routers:
-- name: main
+- name: "main-bitbot"
   routes:
-  - application_name: BitBot
+  - application_name: "bitbot"
     paths:
-    - /
+    - "/"
