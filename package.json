@@ -4,8 +4,10 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
+    "tsc": "tsc",
+    "postinstall": "npm run tsc",
     "build": "tsc",
-    "start": "node build/app.js",
+    "start": "node builds/app.js",
     "lint": "eslint -c .eslintrc.json --max-warnings 0 --ext .ts src/"
   },
   "devDependencies": {
