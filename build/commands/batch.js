@@ -11,7 +11,7 @@ module.exports = class extends command_1.Command {
         if (!msg.member || !msg.guild) {
             return;
         }
-        if (args.length !== 1 || args[0].length !== 4 || /20[0-9]{2}/.test(args[0])) {
+        if (args.length !== 1 || args[0].length !== 4 || !(/20[0-9]{2}/.test(args[0]))) {
             this._sendUsages(msg);
             return;
         }
