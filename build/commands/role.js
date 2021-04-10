@@ -31,6 +31,7 @@ module.exports = class extends command_1.Command {
         }
         else {
             msg.member.roles.add(role);
+            msg.react('✅');
         }
     }
 };
