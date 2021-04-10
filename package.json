@@ -4,6 +4,7 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "start": "node build/app.js",
     "lint": "eslint -c .eslintrc.json --max-warnings 0 --ext .ts src/"
   },
